@@ -1,0 +1,1218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>index</title>
+    <meta name="generator" content="pdftohtml 0.36"/>
+    <meta name="date" content="2020-06-21T05:24:57+00:00"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="page_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+  <body vlink="blue" link="blue" class="calibre">
+<hr class="calibre4"/>
+<a id="p70"></a><img src="index-70_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-70_2.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-70_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-70_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-70_5.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+For each of the following statements, select Yes if the statement is true. Otherwise, select No.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+70 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p71"></a><img src="index-71_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Many-to-many relationships without an entity class to represent the join table are not yet supported. However,<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+you can represent a many-to-many relationship by including an entity class for the join table and mapping two<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+separate one-to-many relationships.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+protected override void OnModelCreating(ModelBuilder modelBuilder)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+{<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+modelBuilder.Entity&lt;PostTag&gt;()<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+HasKey(t =&gt; new { t.PostId, t.TagId });<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+modelBuilder.Entity&lt;PostTag&gt;()<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+HasOne(pt =&gt; pt.Post)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+WithMany(p =&gt; p.PostTags)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+HasForeignKey(pt =&gt; pt.PostId);<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+modelBuilder.Entity&lt;PostTag&gt;()<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+HasOne(pt =&gt; pt.Tag)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+WithMany(t =&gt; t.PostTags)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+HasForeignKey(pt =&gt; pt.TagId);<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+}<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+}<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:20 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing a solution that will use Azure messaging services.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to ensure that the solution uses a publish-subscribe model and eliminates the need for constant<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+polling.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+What are two possible ways to achieve the goal? Each correct answer presents a complete solution.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">NOTE: </b>Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Service Bus<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  Event Hub<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+C.  Event Grid<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+D.  Queue<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+71 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p72"></a><img src="index-72_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-72_2.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: A C</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+It is strongly recommended to use available messaging products and services that support a publish-subscribe<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+model, rather than building your own. In Azure, consider using Service Bus or Event Grid. Other technologies<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+that can be used for pub/sub messaging include Redis, RabbitMQ, and Apache Kafka.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:21 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You have an application that provides weather forecasting data to external partners. You use Azure API<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Management to publish APIs.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You must change the behavior of the API to meet the following requirements:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+• Support alternative input parameters.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+• Remove formatting text from responses.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+• Provide additional context to back-end services.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Which types of policies should you implement? To answer, drag the policy types to the correct scenarios. Each<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+policy type may be used once, more than once, or not at all. You may need to drag the split bar between panes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+or scroll to view content<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+72 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p73"></a><img src="index-73_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-73_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-73_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:22 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note: This question is part of a series of questions that present the same scenario. Each question in the series<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+contains a unique solution that might meet the stated goals. Some question sets might have more than one<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+correct solution, while others might not have a correct solution.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+After you answer a question in this section, you will NOT be able to return to it. As a result, these questions<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+will not appear in the review screen.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You develop a software as a service (SaaS) offering to manage photographs. Users upload photos to a web<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+service which then stores the photos in Azure Storage Blob storage. The storage account type is<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+General-purpose V2.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+image. The process to produce a mobile-friendly version of the image must start in less than one minute.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to design the process that starts the photo processing.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Solution: Trigger the photo processing from Blob storage events.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  NO<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+73 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p74"></a><img src="index-74_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-74_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to catch the triggered event, so move the photo processing to an Azure Function triggered from the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+blob upload<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note: Azure Storage events allow applications to react to events. Common Blob storage event scenarios<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+include image or video processing, search indexing, or any file-oriented workflow.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Events are pushed using Azure Event Grid to subscribers such as Azure Functions, Azure Logic Apps, or even<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+to your own http listener.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note: Only storage accounts of kind StorageV2 (general purpose v2) and BlobStorage support event<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+integration. Storage (general purpose v1) does not support integration with Event Grid.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-overview<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:23 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You must ensure that the external party cannot access the data in the SSN column of the Person table.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Will each protection method meet the requirement? To answer, drag the appropriate responses to the correct<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+protection methods. Each response may be used once, more than once, or not at all. You may need to drag the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+split bar between panes or scroll to view content.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+74 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p75"></a><img src="index-75_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-75_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-75_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You can configure Always Encrypted for individual database columns containing your sensitive data. When<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+setting up encryption for a column, you specify the information about the encryption algorithm and<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+cryptographic keys used to protect the data in the column.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+In SQL Database, the VIEW permissions are not granted by default to the public fixed database role. This<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+enables certain existing, legacy tools (using older versions of DacFx) to work properly. Consequently, to work<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+with encrypted columns (even if not decrypting them) a database administrator must explicitly grant the two<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+VIEW permissions.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 4: No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+All cryptographic keys are stored in an Azure Key Vault.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+75 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p76"></a><img src="index-76_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-76_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-76_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:24 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing an Azure Function App by using Visual Studio. The app will process orders input by an<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Azure Web App. The web app places the order information into Azure Queue Storage.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to review the Azure Function App code shown below.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+76 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p77"></a><img src="index-77_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-77_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-77_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+ExpirationTime - The time that the message expires.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+InsertionTime - The time that the message was added to the queue.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+maxDequeueCount - The number of times to try processing a message before moving it to the poison queue.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+77 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p78"></a><img src="index-78_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Default value is 5.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+When there are multiple queue messages waiting, the queue trigger retrieves a batch of messages and invokes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+function instances concurrently to process them. By default, the batch size is 16. When the number being<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+processed gets down to 8, the runtime gets another batch and starts processing those messages. So the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+maximum number of concurrent messages being processed per function on one virtual machine (VM) is 24.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 4: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:25 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You have an Azure App Services Web App. Azure SQL Database instance. Azure Storage Account and an<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Azure Redis Cache instance in a resource group.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A developer must be able to publish code to the web app. You must grant the developer the Contribute role to<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+the web app<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to grant the role.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+What two commands can you use? Each correct answer presents a complete solution.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  New-AzureRmRoleAssignment<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  az role assignment create<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+C.  az role definition create<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+D.  New-AzureRmRoleDefinition<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: A B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/powershell/module/azurerm.resources/new-azurermroleassignment?view=azurermps-6.13.0<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:26 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+78 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p79"></a><img src="index-79_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note: This question is part of a series of questions that present the same scenario. Each question in the series<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+contains a unique solution that might meet the stated goals. Some question sets might have more than one<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+correct solution, while others might not have a correct solution.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+After you answer a question in this section, you will NOT be able to return to it. As a result, these questions<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+will not appear in the review screen.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Margie's Travel is an international travel and bookings management service. The company is expanding into<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+restaurant bookings. You are tasked with implementing Azure Search tor the restaurants listed in their<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+solution.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You create the index in Azure Search.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to import the restaurant data into the Azure Search service by using the Azure Search NET SDK.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Solution:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+1. Create a SearchServiceClient object to connect to the search index.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+2. Create a DataContainer that contains the documents which must be added.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+3. Create a DataSource instance and set its Container property to the DataContainer.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+4. Set the DataSource property of the SearchServiceCIient<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Use the following method:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+1.Create a SearchIndexClient object to connect to the search index<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+2.Create an IndexBatch that contains the documents which must be added.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+3.Call the Documents.Index method of the SearchIndexClient and pass the IndexBatch.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/search/search-howto-dotnet-sdk<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:27 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are configuring a development environment for your team. You deploy the latest Visual Studio image<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+79 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p80"></a><img src="index-80_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-80_2.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-80_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+from the Azure Marketplace to your Azure subscription.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The development environment requires several software development kits (SDKs) and third-party components<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+to support application development across the organization. You install and customize the deployed virtual<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+machine (VM) for your development team. The customized VM must be saved to allow provisioning of a new<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+team member development environment.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to save the customized VM for future provisioning.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Which tools or services should you use? To answer, select the appropriate options in the answer area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+80 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p81"></a><img src="index-81_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-81_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: Azure Powershell<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Creating an image directly from the VM ensures that the image includes all of the disks associated with the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+VM, including the OS disk and any data disks.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Before you begin, make sure that you have the latest version of the Azure PowerShell module.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You use Sysprep to generalize the virtual machine, then use Azure PowerShell to create the image.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: Azure Blob Storage<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/capture-image-resource#create-an-image-of-a-vm-using-powershell<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:28 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A company is developing a Node.js web app. The web app code is hosted in a GitHub repository located at<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://github.com/TailSpinToys/weapp.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The web app must be reviewed before it is moved to production. You must deploy the initial code release to a<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+deployment slot named review.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to create the web app and deploy the code.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you complete the commands? To answer, select the appropriate options in the answer area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+81 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p82"></a><img src="index-82_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-82_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+82 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p83"></a><img src="index-83_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-83_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+83 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p84"></a><img src="index-84_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-84_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The New-AzResourceGroup cmdlet creates an Azure resource group.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The New-AzAppServicePlan cmdlet creates an Azure App Service plan in a given location<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The New-AzWebApp cmdlet creates an Azure Web App in a given a resource group<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The New-AzWebAppSlot cmdlet creates an Azure Web App slot.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azresourcegroup?view=azps-2.3.2<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/powershell/module/az.websites/new-azappserviceplan?view=azps-2.3.2<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/powershell/module/az.websites/new-azwebapp?view=azps-2.3.2<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/powershell/module/az.websites/new-azwebappslot?view=azps-2.3.2<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:29 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+84 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p85"></a><img src="index-85_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-85_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-85_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-85_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You develop an app that allows users to upload photos and videos to Azure storage. The app uses a storage<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+REST API call to upload the media to a blob storage account named Account1. You have blob storage<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+containers named Container1 and Container2.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Uploading of videos occurs on an irregular basis.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to copy specific blobs from Container1 to Container2 in real time when specific requirements are<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+met, excluding backup blob copies.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+What should you do?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Download the blob to a virtual machine and then upload the blob to Container2.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  Run the Azure PowerShell command Start-AzureStorageBlobCopy.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+C.  Copy blobs to Container2 by using the Put Blob operation of the Blob Service REST API.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+D.  Use AzCopy with the Snapshot switch blobs to Container2.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The Start-AzureStorageBlobCopy cmdlet starts to copy a blob.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example 1: Copy a named blob<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+C:\PS&gt;Start-AzureStorageBlobCopy -SrcBlob "ContosoPlanning2015" -DestContainer "ContosoArchives"<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+-SrcContainer "ContosoUploads"<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+This command starts the copy operation of the blob named ContosoPlanning2015 from the container named<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+ContosoUploads to the container named ContosoArchives.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/powershell/module/azure.storage/start-azurestorageblobcopy?view=azurermps-6.13.0<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:30 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are implementing a software as a service (SaaS) ASP.NET Core web service that will run as an Azure<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Web App. The web service will use an on-premises SQL Server database for storage. The web service also<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+includes a WebJob that processes data updates. Four customers will use the web service.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Each instance of the WebJob processes data for a single customer and must run as a singleton instance.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Each deployment must be tested by using deployment slots prior to serving production data.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Azure costs must be minimized.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+85 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p86"></a><img src="index-86_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-86_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-86_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-86_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Azure resources must be located in an isolated network.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to configure the App Service plan for the Web App.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you configure the App Service plan? To answer, select the appropriate settings in the answer area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">NOTE:</b> Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+86 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p87"></a><img src="index-87_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-87_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Number of VM instances: 4<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are not charged extra for deployment slots.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Pricing tier: Isolated<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The App Service Environment (ASE) is a powerful feature offering of the Azure App Service that gives<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+network isolation and improved scale capabilities. It is essentially a deployment of the Azure App Service into<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+a subnet of a customer’s Azure Virtual Network (VNet).<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://azure.microsoft.com/sv-se/blog/announcing-app-service-isolated-more-power-scale-and-ease-of-use/<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:31 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing a .NET Core model-view controller (MVC) application hosted on Azure for a health care<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+system that allows providers access to their information.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You develop the following code:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+87 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p88"></a><img src="index-88_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-88_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-88_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-88_4.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-88_5.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You define a role named SysAdmin.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to ensure that the application meets the following authorization requirements:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Allow the ProviderAdmin and SysAdmin roles access to the Partner controller regardless of whether the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+user holds an editor claim of partner.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Limit access to the Manage action of the controller to users with an editor claim of partner who are also<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+members of the SysAdmin role.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you complete the code? To answer, drag the appropriate code segments to the correct locations.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Each code segment may be used once, more than once, or not at all. You may need to drag the split bar<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+between panes or scroll to view content.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+88 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p89"></a><img src="index-89_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-89_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Allow the ProviderAdmin and SysAdmin roles access to the Partner controller regardless of whether the user<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+holds an editor claim of partner.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Limit access to the Manage action of the controller to users with an editor claim of partner who are also<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+members of the SysAdmin role.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:32 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing a new page for a website that uses Azure Cosmos DB for data storage. The feature uses<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+documents that have the following format:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You must display data for the new page in a specific order. You create the following query for the page:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to configure a Cosmos DB policy to the support the query.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you configure the policy? To answer, drag the appropriate JSON segments to the correct<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+locations. Each JSON segment may be used once, more than once, or not at all. You may need to drag the split<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+bar between panes or scroll to view content.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+89 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p90"></a><img src="index-90_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-90_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+90 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p91"></a><img src="index-91_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-91_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+91 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p92"></a><img src="index-92_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-92_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: compositeIndexes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You can order by multiple properties. A query that orders by multiple properties requires a composite index.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: descending<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example: Composite index defined for (name ASC, age ASC):<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+It is optional to specify the order. If not specified, the order is ascending.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+{<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+"automatic":true,<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+"indexingMode":"Consistent",<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+"includedPaths":[<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+{<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+"path":"/*"<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+}<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+],<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+92 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p93"></a><img src="index-93_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-93_2.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+"excludedPaths":[],<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+"compositeIndexes":[<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+[<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+{<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+"path":"/name",<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+},<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+{<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+"path":"/age",<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+}<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+]<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+]<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+}<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:33 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You develop a gateway solution for a public facing news API.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The news API back end is implemented as a RESTful sen/ice and hosted in an Azure App Service instance.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to configure back-end authentication for the API Management service instance.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Which target and gateway credential type should you use? To answer, drag the appropriate values to the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+correct parameters. Each value may be used once, more than once, or not at all. You may need to drag the split<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+bar between panes or scroll to view content.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+93 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p94"></a><img src="index-94_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-94_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-94_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: Azure Resource<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: Client cert<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+API Management allows to secure access to the back-end service of an API using client certificates.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/azure-api-management-rest-api-backend-entity<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:34 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You have a web app named MainApp. You are developing a triggered App Service background task by using<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+the WebJobs SDK. This task automatically invokes a function code whenever any new data is received in a<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+queue.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to configure the services.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Which service should you use for each scenario? To answer, drag the appropriate services to the correct<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+scenarios. Each service may be used once, more than once, or not at all. You may need to drag the split bar<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+between panes or scroll to view content.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+94 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p95"></a><img src="index-95_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-95_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-95_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-95_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: WebJobs<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A WebJob is a simple way to set up a background job, which can process continuously or on a schedule.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+WebJobs differ from a cloud service as it gives you get less fine-grained control over your processing<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+environment, making it a more true PaaS service.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: Flow<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:35 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are deploying an Azure Kubernetes Services (AKS) cluster that will use multiple containers.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to create the cluster and verify that the services for the containers are configured correctly and<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+available.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+95 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p96"></a><img src="index-96_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-96_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-96_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Which four commands should you use to develop the solution? To answer, move the appropriate command<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+segments from the list of command segments to the answer area and arrange them in the correct order.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+96 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p97"></a><img src="index-97_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-97_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Step 1: az group create<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Create a resource group with the az group create command. An Azure resource group is a logical group in<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+which Azure resources are deployed and managed.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example: The following example creates a resource group named myAKSCluster in the eastus location.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+az group create --name myAKSCluster --location eastus<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Step 2 : az aks create<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Use the az aks create command to create an AKS cluster.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Step 3: kubectl apply<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+To deploy your application, use the kubectl apply command. This command parses the manifest file and<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+creates the defined Kubernetes objects.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Step 4: az aks get-credentials<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Configure it with the credentials for the new AKS cluster. Example:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+az aks get-credentials --name aks-cluster --resource-group aks-resource-group<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.bitnami.com/azure/get-started-aks/<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:36 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Note: This question is part of a series of questions that present the same scenario. Each question in the</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">series contains a unique solution that might meet the stated goals. Some question sets might have more</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">than one correct solution, while others might not have a correct solution.</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">After you answer a question in this section, you will NOT be able to return to it. As a result, these</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">questions will not appear in the review screen.</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing an Azure solution to collect point-of-sale (POS) device data from 2,000 stores located<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+97 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p98"></a><img src="index-98_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+throughout the world. A single device can produce 2 megabytes (MB) of data every 24 hours. Each store<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+location has one to five devices that send data.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You must store the device data in Azure Blob storage. Device data must be correlated based on a device<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+identifier. Additional stores are expected to open in the future.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to implement a solution to receive the device data.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Solution: Provision an Azure Service Bus. Configure a topic to receive the device data by using a correlation<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+filter.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: A</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A message is raw data produced by a service to be consumed or stored elsewhere. The Service Bus is for<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+high-value enterprise messaging, and is used for order processing and financial transactions.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:37 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing an ASP.NET Core website that can be used to manage photographs which are stored in<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Azure Blob Storage containers.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Users of the website authenticate by using their Azure Active Directory (Azure AD) credentials.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You implement role-based access control (RBAC) role permission on the containers that store photographs.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You assign users to RBAC role.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to configure the website’s Azure AD Application so that user’s permissions can be used with the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Azure Blob containers.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you configure the application? To answer, drag the appropriate setting to the correct location.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Each setting may be used once, more than once, or not at all. You may need to drag the split bar between<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+panes or scroll to view content.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+98 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p99"></a><img src="index-99_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-99_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-99_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+99 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p100"></a><img src="index-100_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-100_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: user_impersonation<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: delegated<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+1.Select the API permissions section<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+2.Click the Add a permission button and then:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Ensure that the My APIs tab is selected<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+3.In the list of APIs, select the API TodoListService-aspnetcore.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+4.In the Delegated permissions section, ensure that the right permissions are checked: user_impersonation.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+5.Select the Add permissions button.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: delegated<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+1.Select the API permissions section<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+2.Click the Add a permission button and then,<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Ensure that the Microsoft APIs tab is selected<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+3.In the Commonly used Microsoft APIs section, click on Microsoft Graph<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+4.In the Delegated permissions section, ensure that the right permissions are checked: User.Read. Use the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+search box if necessary.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+5.Select the Add permissions button<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+100 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p101"></a><img src="index-101_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-101_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/samples/azure-samples/active-directory-dotnet-webapp-webapi-openidconnect-aspnetcore/calling-a-web-api-in-an-aspnet-core-web-application-using-azure-ad/<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:38 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A company is developing a solution that allows smart refrigerators to send temperature information to a<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+central location. You have an existing Service Bus.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The solution must receive and store messages until they can be processed. You create an Azure Service Bus<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+instance by providing a name, pricing tier, subscription, resource group, and location.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to complete the configuration.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Which Azure CLI or PowerShell command should you run?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Option A<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  Option B<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+C.  Option C<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+D.  Option D<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A service bus instance has already been created (Step 2 below). Next is step 3, Create a Service Bus queue.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+101 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p102"></a><img src="index-102_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Steps:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Step 1: # Create a resource group<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+resourceGroupName="myResourceGroup"<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+az group create --name $resourceGroupName --location eastus<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Step 2: # Create a Service Bus messaging namespace with a unique name<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+namespaceName=myNameSpace$RANDOM<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+az servicebus namespace create --resource-group $resourceGroupName --name $namespaceName --location<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+eastus<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Step 3: # Create a Service Bus queue<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+az servicebus queue create --resource-group $resourceGroupName --namespace-name $namespaceName<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+--name BasicQueue<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Step 4: # Get the connection string for the namespace<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+connectionString=$(az servicebus namespace authorization-rule keys list --resource-group<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+$resourceGroupName --namespace-name $namespaceName --name RootManageSharedAccessKey --query<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+primaryConnectionString --output tsv)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-quickstart-cli<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:39 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You develop a web application.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to register the application with an active Azure Active Directory (Azure AD) tenant.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Which three actions should you perform in sequence? To answer, move all actions from the list of actions to<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+the answer area and arrange them in the correct order.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+102 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p103"></a><img src="index-103_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-103_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+103 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p104"></a><img src="index-104_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-104_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-104_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-104_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-104_5.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Register a new application using the Azure portal<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Sign in to the Azure portal using either a work or school account or a personal Microsoft account.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+104 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p105"></a><img src="index-105_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-105_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-105_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-105_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-105_5.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-105_6.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-105_7.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-105_8.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+If your account gives you access to more than one tenant, select your account in the upper right corner.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Set your portal session to the Azure AD tenant that you want.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Search for and select Azure Active Directory. Under Manage, select App registrations.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Select New registration. (Step 1)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+In Register an application, enter a meaningful application name to display to users.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Specify who can use the application. Select the Azure AD instance. (Step 2)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Under Redirect URI (optional), select the type of app you're building: Web or Public client (mobile &amp;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+desktop). Then enter the redirect URI, or reply URL, for your application. (Step 3)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+When finished, select Register.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:40 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note: This question is part of a series of questions that present the same scenario. Each question in the series<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+contains a unique solution. Determine whether the solution meets the stated goals.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing and deploying several ASP.Net web applications to Azure App Service. You plan to save<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+session state information and HTML output. You must use a storage mechanism with the following<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+requirements:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+•Share session state across all ASP.NET web applications<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+•Support controlled, concurrent access to the same session state data for multiple readers and a single writer<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+•Save full HTTP responses for concurrent requests<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to store the information.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Proposed Solution: Deploy and configure an Azure Database for PostgreSQL. Update the web applications.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Instead deploy and configure Azure Cache for Redis. Update the web applications.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/architecture/best-practices/caching#managing-concurrency-in-a-cache<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+105 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p106"></a><img src="index-106_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:41 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing a back-end Azure App Service that scales based on the number of messages contained in a<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Service Bus queue.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A rule already exists to scale up the App Service when the average queue length of unprocessed and valid<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+queue messages is greater than 1000.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to add a new rule that will continuously scale down the App Service as long as the scale up<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+condition is not met.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you configure the Scale rule? To answer, select the appropriate options in the answer area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+106 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p107"></a><img src="index-107_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-107_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+107 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p108"></a><img src="index-108_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+108 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p109"></a><img src="index-109_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-109_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+109 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p110"></a><img src="index-110_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-110_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+110 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p111"></a><img src="index-111_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-111_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: Service bus queue<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing a back-end Azure App Service that scales based on the number of messages contained in a<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Service Bus queue.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: ActiveMessage Count<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+ActiveMessageCount: Messages in the queue or subscription that are in the active state and ready for delivery.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: Count<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 4: Less than or equal to<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to add a new rule that will continuously scale down the App Service as long as the scale up<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+condition is not met.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 5: Decrease count by<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:42 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note: This question is part of a series of questions that present the same scenario. Each question in the series<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+contains a unique solution that might meet the stated goals. Some question sets might have more than one<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+correct solution, while others might not have a correct solution.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+After you answer a question in this question, you will NOT be able to return to it. As a result, these questions<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+will not appear in the review screen.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing a solution that will be deployed to an Azure Kubernetes Service (AKS) cluster. The<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+111 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p112"></a><img src="index-112_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+solution will include a custom VNet, Azure Container Registry images, and an Azure Storage account.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The solution must allow dynamic creation and management of all Azure resources within the AKS cluster.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to configure an AKS cluster for use with the Azure APIs.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Solution: Enable the Azure Policy Add-on for Kubernetes to connect the Azure Policy service to the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+GateKeeper admission controller for the AKS cluster. Apply a built-in policy to the cluster.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Instead create an AKS cluster that supports network policy. Create and apply a network to allow traffic only<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+from within a defined namespace<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/aks/use-network-policies<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:43 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are using Azure Front Door Service.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are expecting inbound files to be compressed by using Brotli compression. You discover that inbound<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+XML files are not compressed. The files are 9 megabytes (MB) in size.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to determine the root cause for the issue.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+To answer, select the appropriate options in the answer area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">NOTE:</b> Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+112 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p113"></a><img src="index-113_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-113_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-113_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-113_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+113 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p114"></a><img src="index-114_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Front Door can dynamically compress content on the edge, resulting in a smaller and faster response to your<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+clients. All files are eligible for compression. However, a file must be of a MIME type that is eligible for<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+compression list.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Sometimes you may wish to purge cached content from all edge nodes and force them all to retrieve new<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+updated assets. This might be due to updates to your web application, or to quickly update assets that contain<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+incorrect information.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+These profiles support the following compression encodings: Gzip (GNU zip), Brotli<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/frontdoor/front-door-caching<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:44 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing an app that manages users for a video game. You plan to store the region, email address,<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+and phone number for the player. Some players may not have a phone number. The player’s region will be<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+used to load-balance data.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Data for the app must be stored in Azure Table Storage.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to develop code to retrieve data for an individual player.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you complete the code? To answer, select the appropriate options in the answer area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+114 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p115"></a><img src="index-115_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-115_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+115 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p116"></a><img src="index-116_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+116 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p117"></a><img src="index-117_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-117_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+117 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p118"></a><img src="index-118_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-118_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Explanation:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+118 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p119"></a><img src="index-119_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-119_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: region<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The player’s region will be used to load-balance data.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Choosing the PartitionKey.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The core of any table's design is based on its scalability, the queries used to access it, and storage operation<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+requirements. The PartitionKey values you choose will dictate how a table will be partitioned and the type of<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+queries that can be used. Storage operations, in particular inserts, can also affect your choice of PartitionKey<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+values.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: email<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Not phone number some players may not have a phone number.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: CloudTable<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 4 : TableOperation query =..<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 5: TableResult<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/rest/api/storageservices/designing-a-scalable-partitioning-strategy-for-azure-table-storage<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:45 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Contoso, Ltd. provides an API to customers by using Azure API Management (APIM). The API authorizes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+users with a JWT token.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You must implement response caching for the APIM gateway. The caching mechanism must detect the user<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+119 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p120"></a><img src="index-120_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-120_2.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-120_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+ID of the client that accesses data for a given location and cache the response for that user ID.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to add the following policies to the policies file:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+• a set-variable policy to store the detected user identity<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+• a cache-lookup-value policy<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+• a cache-store-value policy<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+• a find-and-replace policy to update the response body with the user profile information<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+To which policy section should you add the policies? To answer, drag the appropriate sections to the correct<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+policies. Each section may be used once, more than once, or not at all. You may need to drag the split bar<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+between panes or scroll to view content<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+120 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p121"></a><img src="index-121_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-121_2.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+C:\Users\wk\Desktop\mudassar\Untitled.jpg<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: Inbound.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A set-variable policy to store the detected user identity.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;policies&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;inbound&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;!-- How you determine user identity is application dependent --&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;set-variable<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+name="enduserid"<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+value="@(context.Request.Headers.GetValueOrDefault("Authorization","").Split(' ')[1].AsJwt()?.Subject)" /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: Inbound<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A cache-lookup-value policy<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;inbound&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;base /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;cache-lookup vary-by-developer="true | false" vary-by-developer-groups="true | false"<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+downstream-caching-type="none | private | public" must-revalidate="true | false"&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;vary-by-query-parameter&gt;parameter name&lt;/vary-by-query-parameter&gt; &lt;!-- optional, can repeated several<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+times --&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;/cache-lookup&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+121 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p122"></a><img src="index-122_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;/inbound&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: Outbound<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A cache-store-value policy.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;outbound&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;base /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;cache-store duration="3600" /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;/outbound&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 4: Outbound<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A find-and-replace policy to update the response body with the user profile information.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;outbound&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;!-- Update response body with user profile--&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;find-and-replace<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+from='"$userprofile$"'<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+to="@((string)context.Variables["userprofile"])" /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;base /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;/outbound&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/api-management/api-management-caching-policies<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/api-management/api-management-sample-cache-by-key<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:46 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A company is developing a gaming platform. Users can join teams to play online and see leaderboards that<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+include player statistics. The solution includes an entity named Team.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You plan to implement an Azure Redis Cache instance to improve the efficiency of data operations for entities<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+that rarely change.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+122 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p123"></a><img src="index-123_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-123_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-123_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to invalidate the cache when team data is changed.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you complete the code? To answer, select the appropriate options in the answer area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+123 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p124"></a><img src="index-124_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-124_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: IDatabase cache = connection.GetDatabase();<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Connection refers to a previously configured ConnectionMultiplexer.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: cache.StringSet("teams",")<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+To specify the expiration of an item in the cache, use the TimeSpan parameter of StringSet.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+cache.StringSet("key1", "value1", TimeSpan.FromMinutes(90));<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://azure.microsoft.com/sv-se/blog/lap-around-azure-redis-cache-preview/<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:47 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Note: This question is part of a series of questions that present the same scenario. Each question in the</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">series contains a unique solution that might meet the stated goals. Some question sets might have more</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">than one correct solution, while others might not have a correct solution.</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">After you answer a question in this section, you will NOT be able to return to it. As a result, these</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">questions will not appear in the review screen.</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You develop Azure solutions.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You must grant a virtual machine (VM) access to specific resource groups in Azure Resource Manager.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to obtain an Azure Resource Manager access token.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Solution: Use the Reader role-based access control (RBAC) role to authenticate the VM with Azure Resource<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Manager.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+124 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p125"></a><img src="index-125_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Instead run the Invoke-RestMethod cmdlet to make a request to the local managed identity for Azure resources<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+endpoint.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:48 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You plan to deploy a web app to App Service on Linux. You create an App Service plan. You create and push<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+a custom Docker image that image that contains the web app to Azure Container Registry.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to access the console logs generated from inside the container in real-time.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you complete the Azure CLI command? To answer, select the appropriate options in the answer<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+125 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p126"></a><img src="index-126_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-126_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+126 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p127"></a><img src="index-127_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-127_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+127 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p128"></a><img src="index-128_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-128_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: config<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+To Configure logging for a web app use the command:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+az webapp log config<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: --docker-container-logging<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Syntax include:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+az webapp log config [--docker-container-logging {filesystem, off}]<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: webapp<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+To download a web app's log history as a zip file use the command:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+az webapp log download<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 4: download<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+128 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p129"></a><img src="index-129_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/cli/azure/webapp/log<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:49 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note: This question is part of a series of questions that present the same scenario. Each question in the series<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+contains a unique solution that might meet the stated goals. Some question sets might have more than one<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+correct solution, while others might not have a correct solution.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+After you answer a question in this question, you will NOT be able to return to it. As a result, these questions<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+will not appear in the review screen.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are developing a solution that will be deployed to an Azure Kubernetes Service (AKS) cluster. The<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+solution will include a custom VNet, Azure Container Registry images, and an Azure Storage account.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The solution must allow dynamic creation and management of all Azure resources within the AKS cluster.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to configure an AKS cluster for use with the Azure APIs.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Solution: Create an AKS cluster that supports network policy. Create and apply a network to allow traffic only<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+from within a defined namespace.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: A</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+When you run modern, microservices-based applications in Kubernetes, you often want to control which<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+components can communicate with each other. The principle of least privilege should be applied to how traffic<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+can flow between pods in an Azure Kubernetes Service (AKS) cluster. Let's say you likely want to block<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+traffic directly to back-end applications. The Network Policy feature in Kubernetes lets you define rules for<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+ingress and egress traffic between pods in a cluster.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/aks/use-network-policies<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:50 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You have an app that stores player scores for an online game. The app stores data in Azure tables using a class<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+named PlayerScore as the table entity. The table is populated with 100,000 records.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are reviewing the following section of code that is intended to retrieve 20 records where the player score<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+exceeds 15,000. (Line numbers are included for reference only.)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+129 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p130"></a><img src="index-130_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-130_2.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-130_3.jpg" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You have the following code. (Line numbers are included for reference only.)<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You store customer information in an Azure Cosmos database. The following data already exists in the<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+database:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+For each of the following statements, select Yes if the statement is true. Otherwise, select No.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+130 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p131"></a><img src="index-131_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-131_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-131_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-131_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The TableQuery.Take method defines the upper bound for the number of entities the query returns.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Example:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+131 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p132"></a><img src="index-132_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+query.Take(10);<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 3: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 4: Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://www.vkinfotek.com/azureqa/how-do-i-query-azure-table-storage-using-tablequery-class.html<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:51 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Note: This question is part of a series of questions that present the same scenario. Each question in the</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">series contains a unique solution that might meet the stated goals. Some question sets might have more</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">than one correct solution, while others might not have a correct solution.</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">After you answer a question in this section, you will NOT be able to return to it. As a result, these</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">questions will not appear in the review screen.</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Development. You create additional deployment slots named <b class="calibre3">Testing</b> and <b class="calibre3">Production</b>. You enable auto swap<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+on the Production deployment slot.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to ensure that scripts run and resources are available before a swap operation occurs.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Solution: Update the web.config file to include the applicationInitialization configuration element. Specify<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+custom initialization actions to run the scripts.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: B</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Specify custom warm-up.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Some apps might require custom warm-up actions before the swap. The applicationInitialization configuration<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+element in web.config lets you specify custom initialization actions. The swap operation waits for this custom<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+warm-up to finish before swapping with the target slot. Here's a sample web.config fragment.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;system.webServer&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;applicationInitialization&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;add initializationPage="/" hostName="[app hostname]" /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+132 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p133"></a><img src="index-133_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;add initializationPage="/Home/About" hostName="[app hostname]" /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;/applicationInitialization&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;/system.webServer&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots#troubleshoot-swaps<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:52 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Note: This question is part of a series of questions that present the same scenario. Each question in the</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">series contains a unique solution that might meet the stated goals. Some question sets might have more</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">than one correct solution, while others might not have a correct solution.</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">After you answer a question in this section, you will NOT be able to return to it. As a result, these</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">questions will not appear in the review screen.</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Development. You create additional deployment slots named <b class="calibre3">Testing</b> and <b class="calibre3">Production</b>. You enable auto swap<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+on the Production deployment slot.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to ensure that scripts run and resources are available before a swap operation occurs.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Solution: Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+auto swap and deploy the app to the Production slot.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Does the solution meet the goal?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  Yes<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  No<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: A</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Instead update the web.config file to include the applicationInitialization configuration element. Specify<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+custom initialization actions to run the scripts.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Note: Some apps might require custom warm-up actions before the swap. The applicationInitialization<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+configuration element in web.config lets you specify custom initialization actions. The swap operation waits<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+for this custom warm-up to finish before swapping with the target slot. Here's a sample web.config fragment.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;system.webServer&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;applicationInitialization&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;add initializationPage="/" hostName="[app hostname]" /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+133 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p134"></a><img src="index-134_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-134_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;add initializationPage="/Home/About" hostName="[app hostname]" /&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;/applicationInitialization&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+&lt;/system.webServer&gt;<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots#troubleshoot-swaps<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:53 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A company is developing a mobile app for field service employees using Azure App Service Mobile Apps as<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+the backend.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+The company’s network connectivity varies throughout the day. The solution must support offline use and<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+synchronize changes in the background when the app is online app.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to implement the solution.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+How should you complete the code segment? To answer, select the appropriate options in the answer area.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+134 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p135"></a><img src="index-135_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-135_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-135_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 1: var todoTable = client GetSyncTable&lt;TodoItem&gt;()<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+To setup offline access, when connecting to your mobile service, use the method GetSyncTable instead of<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+GetTable (example):<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+135 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p136"></a><img src="index-136_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-136_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-136_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-136_4.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+IMobileServiceSyncTable todoTable = App.MobileService.GetSyncTable(); /<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Box 2: await todoTable.PullAsync("allTodoItems",todo.Table.CreateQuery());<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Your app should now use IMobileServiceSyncTable (instead of IMobileServiceTable) for CRUD operations.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+This will save changes to the local database and also keep a log of the changes. When the app is ready to<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+synchronize its changes with the Mobile Service, use the methods PushAsync and PullAsync (example):<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+await App.MobileService.SyncContext.PushAsync();<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+await todoTable.PullAsync();<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+References:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://azure.microsoft.com/es-es/blog/offline-sync-for-mobile-services/<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:54 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You are a developer for a SaaS company that offers many web services.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+All web services for the company must meet the following requirements:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Use API Management to access the services<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Use OpenID Connect for authentication<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Prevent anonymous usage<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A recent security audit found that several web services can be called without any authentication.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Which API Management policy should you implement?<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+A.  jsonp<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+B.  authentication-certificate<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+C.  check-header<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+D.  validate-jwt<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer: D</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Add the validate-jwt policy to validate the OAuth token for every incoming request.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Reference:<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-protect-backend-with-aad<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+136 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<hr class="calibre4"/>
+<a id="p137"></a><img src="index-137_1.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-137_2.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<img src="index-137_3.png" class="calibre1"/><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Microsoft - AZ-204<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+Question #:55 - <a href="index_split_000.html#p40">(Exam Topic 3)</a><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You manage several existing Logic Apps.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+You need to change definitions, add new logic, and optimize these apps on a regular basis.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+What should you use? To answer, drag the appropriate tools to the correct functionalities. Each tool may be<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+content.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+NOTE: Each correct selection is worth one point.<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Answer:</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+<b class="calibre3">Explanation</b><p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+137 of 272<p class="calibre2" style="margin:0pt; border:0pt; height:0pt"> </p>
+</body></html>

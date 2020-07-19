@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta content="4d2120cd-4c42-4123-b746-af5778961a4b" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (3.24.2)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>az-204</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="uAvkoFNioKLL95V7BQkmgM3" playOrder="1">
+      <navLabel>
+        <text>Topic 1 : Windows Server 2016 virtual machine</text>
+      </navLabel>
+      <content src="index_split_000.html#p2"/>
+    </navPoint>
+    <navPoint id="uRiO2mjprxloCqo5E7YnZY3" playOrder="2">
+      <navLabel>
+        <text>Topic 2 : ContentAnalysisService</text>
+      </navLabel>
+      <content src="index_split_000.html#p25"/>
+    </navPoint>
+    <navPoint id="uDVPMfUXnZ8d5uRkExijj27" playOrder="3">
+      <navLabel>
+        <text>Topic 3 : Misc. Questions</text>
+      </navLabel>
+      <content src="index_split_000.html#p40"/>
+    </navPoint>
+  </navMap>
+</ncx>
